@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* container styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 24px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.9s
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.9s;
+}
+
+header nav ul li a:hover {
+    color: #f4a261
+}
+
+/* hero section */
+.hero {
+    background-image: url("../images/hero.png");
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #f4a261;
+    color: #fff;
+    padding: 16px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.5s;
+}
+
+.cta-button:hover {
+    background-color: rgb(224, 218, 34);
+}
+
+/* services */
+/* .services */
+
+.services {
+    padding: 50px 0;
+    background-color: #d98181;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.service-card {
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* gallery section */
+.gallery {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+.gallery-item img {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* destinations section */
+.destinations {
+    padding: 50px 0;
+    background-color: #dbca38;
+    text-align: center;
+}
+
+.destinations h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.destination {
+    margin-bottom: 20px;
+}
+
+.destination img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* offers sections */
+.offers {
+    padding: 50px 0;
+    background-color: #95b4ee;
+    text-align: center;
+}
+
+.offers h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.offer {
+    margin-bottom: 20px;
+}
+
+.offer h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 20px 0
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.form-section h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    border: 2px solid orchid;
+    border-radius: 5px;
+    font-size: 29px;
+}
+
+.form-section .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+form {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.highlights {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.highlights h2 {
+    margin-bottom: 28px;
+    font-size: 24px;
+}
+
+.highlight-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.highlight-cards .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(47, 206, 47, 0.9);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* .highlight-cards .card img {
+    width: 100%;
+    border-radius: 5px;
+} */
+
+.highlight-cards .card:hover {
+    padding: 30px;
+    background-color: #95b4ee;
+}
